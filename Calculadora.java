@@ -38,8 +38,7 @@ public class Calculadora implements IPostfixCalculator, IStack{
 
     @Override
     public int division(int a, int b) {
-        // TODO Auto-generated method stub
-        return 0;
+        return a/b;
     }
 
     @Override
