@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
 /**
  * @author 
  * Maria José Villafuerte
@@ -11,10 +14,22 @@
 public class Calculadora<T> {
 
     static PostfixCalculator calculadora = new PostfixCalculator(); 
-    private static Stack<Integer> stack; 
+    private static Stack<Integer> stack;
+    static ArrayList<String> operaciones;
 
     public Calculadora() {
+
         stack = new Stack<Integer>();
+        read();
+
+    }
+
+    public void read(){
+        System.out.println("Ingrese la ruta del archivo ej C:\\ejemplos\\example1.txt");
+        Scanner in = new Scanner(System.in);
+        String fpath = in.nextLine();
+
+        operaciones = readFile._readfile(fpath);
     }
      
     
