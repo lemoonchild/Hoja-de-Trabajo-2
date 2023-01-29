@@ -28,7 +28,7 @@ public static ArrayList<String> _readfile(String fpath) {
         Scanner myReader = new Scanner(myObj);
         while (myReader.hasNextLine()) {
           String data = myReader.nextLine();
-          System.out.println(data);
+          total.add(data);
         }
         myReader.close();
       } catch (FileNotFoundException e) {
