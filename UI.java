@@ -15,4 +15,10 @@ public class UI {
         
     }
 
+    public void menuPrincipal(){
+
+        System.out.println("Bienvenido a la Calculadora Postfix");
+        
+    }
+
 }
