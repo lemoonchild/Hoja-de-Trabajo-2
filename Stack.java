@@ -39,7 +39,7 @@ public class Stack<T> implements IStack<T>{
 
     /**
      * Metodo que agrega a la pila un valor del indice 0
-     * @param T valor para agregar dentro de la pila 
+     * @param value valor para agregar dentro de la pila
      */
     @Override
     public void push(T value) {

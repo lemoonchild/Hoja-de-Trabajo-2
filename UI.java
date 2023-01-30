@@ -18,7 +18,7 @@ public class UI {
     
         System.out.println("\nBienvenido a la Calculadora Postfix");
 
-        String postfix = readFile._readfile("C:\\Users\\ncast\\OneDrive\\Documentos\\Universidad\\Semestres\\Tercer Semestre\\Algoritmos y Estructura de Datos\\Hoja-de-Trabajo-2\\datos.txt");
+        String postfix = readFile._readfile("datos.txt");
         
         Calculadora calculadora = new Calculadora(); 
 

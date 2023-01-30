@@ -15,7 +15,7 @@ public class PostfixCalculator<T> implements IPostfixCalculator{
 
     /**
      * Metodo que verifica si queda un dato en el Stack 
-     * @param operados elementos dentro de la pila 
+     * @param operandos elementos dentro de la pila
      * @return true si solo se encuentra un elemento
      * @return false no se encuentra solo un elemento 
      */
