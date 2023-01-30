@@ -20,8 +20,9 @@ public class PostfixCalculator<T> implements IPostfixCalculator{
      */
     @Override
     public boolean isOneItem(IStack operandos) {
-        
-        return false;
+        if (operandos.count() == 1){
+            return true;
+        } else {return false;}
     }
 
     /**
