@@ -6,7 +6,7 @@ import java.util.Scanner;
  * Fabiola Contreras
  * Madeline Castro 
  * @category Ejercicio #2
- * Propósito: 
+ * Propósito: Ser la interfaz del usuario, mostrará la operación a realizar y el resultado
  * @date 30/01/2023
  */
 

@@ -7,7 +7,7 @@ import java.util.Arrays;
  * Fabiola Contreras
  * Madeline Castro 
  * @category Ejercicio #2
- * Propósito: 
+ * Propósito: Realizar las operaciones aritméticas de los números obtenidos de la pila
  * @date 30/01/2023
  */
 

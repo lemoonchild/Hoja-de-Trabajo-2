@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Fabiola Contreras
  * Madeline Castro 
  * @category Ejercicio #2
- * Propósito: 
+ * Propósito: Ser la pila del código, permite ingresar, eliminar y verificar los elementos.
  * @date 30/01/2023
  */
 

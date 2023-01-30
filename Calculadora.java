@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Fabiola Contreras
  * Madeline Castro 
  * @category Ejercicio #2
- * Propósito: 
+ * Propósito: Realizar las operaciones matemáticas del archivo leído
  * @date 30/01/2023
  */
 

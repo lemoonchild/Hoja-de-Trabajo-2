@@ -1,4 +1,13 @@
-import org.junit.jupiter.api.Test;
+/* Maria José Villafuerte
+* Fabiola Contreras
+* Madeline Castro
+* @category Ejercicio #2
+* Propósito: Realizaciones de pruebas jUinit para la calculadora
+* @date 30/01/2023
+¿*/
+
+
+        import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
