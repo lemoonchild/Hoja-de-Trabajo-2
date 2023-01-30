@@ -11,32 +11,22 @@ import java.util.Scanner;
  */
 
 public class UI {
-    Scanner sc = new Scanner(System.in); 
-    readFile readFile = new readFile();
+    static Scanner sc = new Scanner(System.in); 
+    static readFile readFile = new readFile();
 
     public static void main(String[] args) {
-        
-    }
-
-    /**
-     * Menu principal del programa 
-     */
-    public void mainMenu(){
-
-        System.out.println("Bienvenido a la Calculadora Postfix");
-        
-    }
-    /**
-     * Metodo que recibe la ruta del archivo que se va a leer 
-     */
-    public void fileRute(){
-        System.out.println("Por favor, ingrese la ruta de su archivo: ");
-        System.out.println("\tEjemplo: C:\\archivo\\datos.txt");
-
-        String file = sc.nextLine(); 
-
-        readFile._readfile(file); 
     
+        System.out.println("\nBienvenido a la Calculadora Postfix");
+
+        String postfix = readFile._readfile("C:\\Users\\ncast\\OneDrive\\Documentos\\Universidad\\Semestres\\Tercer Semestre\\Algoritmos y Estructura de Datos\\Hoja-de-Trabajo-2\\datos.txt");
+        
+        Calculadora calculadora = new Calculadora(); 
+
+        System.out.println("\n\tOperación a realizar: " + postfix);
+
+        System.out.println("\tResultado obtenido: " + Calculadora.calculate(postfix) + "\n");
+
+
     }
 
 

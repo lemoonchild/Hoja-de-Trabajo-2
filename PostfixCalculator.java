@@ -15,13 +15,13 @@ public class PostfixCalculator<T> implements IPostfixCalculator{
 
     /**
      * Metodo que verifica si queda un dato en el Stack 
-     * @param operados elementos dentr de la pila 
+     * @param operados elementos dentro de la pila 
      * @return true si solo se encuentra un elemento
      * @return false no se encuentra solo un elemento 
      */
     @Override
     public boolean isOneItem(IStack operandos) {
-        
+
         if (operandos.count() == 1){
             return true;
         } else {
@@ -89,6 +89,7 @@ public class PostfixCalculator<T> implements IPostfixCalculator{
     public ArrayList<String> getItems(String _expresion) {
 
         String[] elements = _expresion.split(" "); 
+        
         return new ArrayList<String>(Arrays.asList(elements)); 
     }
 
