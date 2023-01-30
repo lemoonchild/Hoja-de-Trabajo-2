@@ -25,9 +25,8 @@ public class PostfixCalculator<T> implements IPostfixCalculator{
         if (operandos.count() == 1){
             return true;
         } else {
-            return false; 
+            return false;
         }
-
     }
 
     /**

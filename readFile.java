@@ -16,13 +16,12 @@ import java.util.Scanner; // Import the Scanner class to read text files
 public class readFile {
 
 /**
-* Metodo que lee el documento con las operaciones Postfix y guarda los datos 
-* @param fpath Lugar donde se encuentra el doc en formato txt con las operaciones 
-*/
-public void _readfile(String fpath) {
+ * @param fpath
+ * @return data String
+ */
+public static ArrayList<String> _readfile(String fpath) {
 
-  ArrayList<String> op = new ArrayList<String>(); //Guarda todas las operaciones necesarias en posfix
-  String info = ""; 
+    ArrayList<String> total = new ArrayList<>();
 
     try {
       
@@ -30,10 +29,8 @@ public void _readfile(String fpath) {
         Scanner myReader = new Scanner(data);
 
         while (myReader.hasNextLine()) {
-          info = myReader.nextLine();
-          System.out.println(data);
-          op.add(info); 
-
+          data = myReader.nextLine();
+          total.add(data);
         }
         myReader.close();
 
@@ -43,7 +40,6 @@ public void _readfile(String fpath) {
         e.printStackTrace();
 
     }
-  
-
+    return total;
   }
 }
