@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 /**
  * @author 
@@ -10,15 +11,33 @@
  */
 
 public class UI {
-    
+    Scanner sc = new Scanner(System.in); 
+    readFile readFile = new readFile();
+
     public static void main(String[] args) {
         
     }
 
-    public void menuPrincipal(){
+    /**
+     * Menu principal del programa 
+     */
+    public void mainMenu(){
 
         System.out.println("Bienvenido a la Calculadora Postfix");
         
     }
+    /**
+     * Metodo que recibe la ruta del archivo que se va a leer 
+     */
+    public void fileRute(){
+        System.out.println("Por favor, ingrese la ruta de su archivo: ");
+        System.out.println("\tEjemplo: C:\\archivo\\datos.txt");
+
+        String file = sc.nextLine(); 
+
+        readFile._readfile(file); 
+    
+    }
+
 
 }

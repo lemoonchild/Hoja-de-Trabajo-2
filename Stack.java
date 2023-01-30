@@ -19,8 +19,8 @@ public class Stack<T> implements IStack<T>{
     }
     
     /**
-     * 
-     * @return
+     * Metodo que cuenta la cantidad de elementos que hay dentro de la pila 
+     * @return Cantidad de elementos dentro de la pila 
      */
     @Override
     public int count() {
@@ -28,8 +28,9 @@ public class Stack<T> implements IStack<T>{
     }
 
     /**
-     * 
-     * @return
+     * Metodo que verifica si la pila se encuentra vacia 
+     * @return true si la pila esta vacia 
+     * @return false si la pila no esta vacia 
      */
     @Override
     public boolean isEmpty() {
@@ -37,8 +38,8 @@ public class Stack<T> implements IStack<T>{
     }
 
     /**
-     * 
-     * 
+     * Metodo que agrega a la pila un valor del indice 0
+     * @param T valor para agregar dentro de la pila 
      */
     @Override
     public void push(T value) {
@@ -46,8 +47,8 @@ public class Stack<T> implements IStack<T>{
     }
 
     /**
-     * 
-     * @return
+     * Metodo que remueve de la pila un valor del indice 0 
+     * @return valor eliminado de la pila 
      */
     @Override
     public T pull() {
@@ -55,7 +56,7 @@ public class Stack<T> implements IStack<T>{
     }
 
     /**
-     * 
+     * Metodo que obtiene del Stack el valor del indice 0
      * @return 
      */
     @Override

@@ -15,6 +15,7 @@ public class Calculadora<T> {
 
     public Calculadora() {
         stack = new Stack<Integer>();
+        
     }
      
     
