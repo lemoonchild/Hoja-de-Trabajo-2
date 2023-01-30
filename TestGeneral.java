@@ -2,9 +2,9 @@
 * Fabiola Contreras
 * Madeline Castro
 * @category Ejercicio #2
-* Propósito: Realizaciones de pruebas jUinit para la calculadora
+* Propósito: Realizaciones de pruebas jUnit para la calculadora
 * @date 30/01/2023
-¿*/
+*/
 
 
         import org.junit.jupiter.api.Test;

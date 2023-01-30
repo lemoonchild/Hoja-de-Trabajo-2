@@ -8,7 +8,7 @@ import java.util.Scanner; // Import the Scanner class to read text files
  * Fabiola Contreras
  * Madeline Castro 
  * @category Ejercicio #2
- * Propósito: 
+ * Propósito: Leer el arhivo txt que tendrá las operaciones a realizar 
  * @date 30/01/2023
  */
 
