@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -17,14 +18,20 @@ public class UI {
     public static void main(String[] args) {
     
         System.out.println("\nBienvenido a la Calculadora Postfix");
+        ArrayList<String> postfix = readFile._readfile("datos.txt//");
+        Calculadora calculadora = new Calculadora();
 
-        String postfix = readFile._readfile("datos.txt");
+        for (String element: postfix) {
+            System.out.println("\n\tOperación a realizar: " + element);
+
+            System.out.println("\tResultado obtenido: " + Calculadora.calculate(element) + "\n");
+        }
+
+        System.out.println("\nSe han hecho los cálculos de todo el archivo");
         
-        Calculadora calculadora = new Calculadora(); 
 
-        System.out.println("\n\tOperación a realizar: " + postfix);
 
-        System.out.println("\tResultado obtenido: " + Calculadora.calculate(postfix) + "\n");
+
 
 
     }

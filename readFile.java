@@ -1,5 +1,6 @@
 import java.io.File;  // Import the File class
 import java.io.FileNotFoundException;  // Import this class to handle errors
+import java.util.ArrayList;
 import java.util.Scanner; // Import the Scanner class to read text files
 
 /**
@@ -19,9 +20,10 @@ public class readFile {
  * @param fpath Mensaje de lugar donde se encuentra el archivo datos.txt 
  * @return data String
  */
-public static String _readfile(String fpath) {
+public static ArrayList<String> _readfile(String fpath) {
 
-  String data = ""; 
+  String data = "";
+  ArrayList<String> total = new ArrayList<>();
 
   try {
 
@@ -31,6 +33,7 @@ public static String _readfile(String fpath) {
       while (myReader.hasNextLine()) {
 
         data = myReader.nextLine();
+        total.add(data);
 
       }
       myReader.close();
@@ -39,6 +42,6 @@ public static String _readfile(String fpath) {
       System.out.println("An error occurred.");
       e.printStackTrace();
   }
-  return data; 
+  return total;
 }
 }
