@@ -47,16 +47,16 @@ public class Calculadora<T> {
                 switch(num_op){
 
                     case "+":
-                        stack.push(calculadora.suma(a, b));
+                        stack.push(calculadora.suma(b, a));
                         break; 
                     case "-" :
-                        stack.push(calculadora.resta(a, b));
+                        stack.push(calculadora.resta(b, a));
                         break; 
                     case "*": 
-                        stack.push(calculadora.multiplicacion(a, b));
+                        stack.push(calculadora.multiplicacion(b, a));
                         break; 
                     case "/": 
-                        stack.push(calculadora.division(a, b));
+                        stack.push(calculadora.division(b, a));
                         break; 
                 }
 
