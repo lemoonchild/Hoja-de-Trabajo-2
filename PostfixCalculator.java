@@ -11,7 +11,7 @@ import java.util.Arrays;
  * @date 30/01/2023
  */
 
-public class PostfixCalculator<T> implements IPostfixCalculator{
+public class PostfixCalculator<T> {
 
     /**
      * Metodo que verifica si queda un dato en el Stack 
@@ -19,7 +19,6 @@ public class PostfixCalculator<T> implements IPostfixCalculator{
      * @return true si solo se encuentra un elemento
      * @return false no se encuentra solo un elemento 
      */
-    @Override
     public boolean isOneItem(IStack operandos) {
 
         if (operandos.count() == 1){
@@ -33,7 +32,6 @@ public class PostfixCalculator<T> implements IPostfixCalculator{
      * Metodo que realiza la suma de las operaciones Postfix
      * @return Suma de dos numeros 
      */
-    @Override
     public int suma(int a, int b) {
         return a + b;
     }
@@ -42,7 +40,6 @@ public class PostfixCalculator<T> implements IPostfixCalculator{
      * Metodo que realiza la resta de las operaciones Postfix
      * @return Resta de dos numeros 
      */
-    @Override
     public int resta(int a, int b) {
         return a - b;
     }
@@ -51,7 +48,6 @@ public class PostfixCalculator<T> implements IPostfixCalculator{
      * Metodo que realiza la multiplicacion de las operaciones Postfix
      * @return Multiplicacion de dos numeros 
      */
-    @Override
     public int multiplicacion(int a, int b) {
         return a * b;
     }
@@ -60,7 +56,6 @@ public class PostfixCalculator<T> implements IPostfixCalculator{
      * Metodo que realiza la division de las operaciones Postfix
      * @return Division de dos numeros 
      */
-    @Override
     public int division(int a, int b) {
         return a/b;
     }
@@ -70,7 +65,6 @@ public class PostfixCalculator<T> implements IPostfixCalculator{
      * @return true si es operador 
      * @return false si no es operador 
      */
-    @Override
     public boolean isOperator(String item) {
         
         if (item.equals("+") || item.equals("-") || item.equals("*") || item.equals("/")){
@@ -85,7 +79,6 @@ public class PostfixCalculator<T> implements IPostfixCalculator{
      * @param _expresion Elementos de tipo String de la expresion 
      * @return Lista convertida en un ArrayList 
      */
-    @Override
     public ArrayList<String> getItems(String _expresion) {
 
         String[] elements = _expresion.split(" "); 

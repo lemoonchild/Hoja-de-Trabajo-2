@@ -67,5 +67,4 @@ public class Calculadora<T> {
         }
         return stack.pull(); 
     }
-
 }

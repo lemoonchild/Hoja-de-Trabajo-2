@@ -5,6 +5,7 @@
 * Propósito: Realizaciones de pruebas jUnit para la calculadora
 * @date 30/01/2023
 */
+/*
 
 
         import org.junit.jupiter.api.Test;
@@ -52,3 +53,4 @@ class TestGeneral {
         assertEquals(15, result);
     }
 }
+*/

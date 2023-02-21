@@ -16,7 +16,6 @@ public class UI {
     static readFile readFile = new readFile();
 
     public static void main(String[] args) {
-    
         System.out.println("\nBienvenido a la Calculadora Postfix");
         ArrayList<String> postfix = readFile._readfile("datos.txt//");
         Calculadora calculadora = new Calculadora();
@@ -26,15 +25,6 @@ public class UI {
 
             System.out.println("\tResultado obtenido: " + Calculadora.calculate(element) + "\n");
         }
-
         System.out.println("\nSe han hecho los cálculos de todo el archivo");
-        
-
-
-
-
-
     }
-
-
 }
